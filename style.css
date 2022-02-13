@@ -438,11 +438,12 @@ body {
         margin-left:42%;
     }
     .itemprice {
+        position:absolute;
         margin:0 0 0 2%;
     }
     .sold {
         position:absolute;
-        margin: 8% 0 0 42% ;
+        margin: 6% 0 0 42% ;
         font-size: 15px;
     }
     .item a {
