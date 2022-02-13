@@ -161,6 +161,7 @@ body {
     height:auto;
     transition-duration: 0.5s;
     margin-bottom: 2vh;
+    z-index:1;
 }
 .account {
     cursor:pointer;
@@ -323,7 +324,6 @@ body {
     height:50%;
     border:2px solid aliceblue;
 }
-
 .money {
     position:absolute;
     float:left;
@@ -343,7 +343,6 @@ body {
     height:50%;
     border:2px solid aliceblue;
 }
-
 .horny {
     position:absolute;
     right:0;
@@ -395,6 +394,9 @@ body {
         margin-right:10vw;
         margin-left:10vw;
     }
+    .bottommenu {
+        margin-bottom:5vh;
+    }
     .aboutmeword {
         margin-top:1vh;
         font-size:30px;
@@ -444,9 +446,6 @@ body {
         position:absolute;
         margin-left:42%;
         font-size: 15px;
-    }
-    .item a {
-        
     }
     .wtfword {
         font-size:12px;
