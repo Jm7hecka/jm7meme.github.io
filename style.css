@@ -435,14 +435,17 @@ body {
         overflow: visible;
     }
     .itemname {
+        font-size:20vw;
         width:50vw;
         margin-left:42%;
     }
     .itemprice {
+        font-size:20vw;
         position:relative;
         margin:0 0 0 2%;
     }
     .sold {
+        font-size:20vw;
         position:absolute;
         margin-left:42%;
         font-size: 15px;
