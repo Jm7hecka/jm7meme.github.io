@@ -426,11 +426,11 @@ body {
         margin:4vh 0 0 5vw;
     }
     .item {
-        height:25vh;
+        height:23vh;
     }
     .item img {
         width:40vw;
-        height:20vh;
+        height:23vh;
         overflow: visible;
     }
     .itemname {
@@ -441,7 +441,7 @@ body {
         margin:0 0 0 2%;
     }
     .sold {
-        margin: 10% 0 0 42% ;
+        margin: 8% 0 0 42% ;
         font-size: 15px;
     }
     .item a {
@@ -478,7 +478,7 @@ body {
         height:35%;
     }
     .savehorny {
-        font-size: 15px;
+        font-size: 15px; 
         float:none;
         position:absolute;
         width:90%;
