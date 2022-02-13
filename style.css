@@ -161,6 +161,7 @@ body {
     height:auto;
     transition-duration: 0.5s;
     margin-bottom: 2vh;
+    z-index：1；
 }
 .account {
     cursor:pointer;
@@ -392,7 +393,7 @@ body {
     .menubutton {
         margin-top:2vh;
     }
-    .menuword, .menu a {
+    .menuword, .menu a, .account {
         margin-right:10vw;
         margin-left:10vw;
     }
@@ -440,7 +441,7 @@ body {
         margin:0 0 0 2%;
     }
     .sold {
-        margin: 12% 0 0 42% ;
+        margin: 10% 0 0 42% ;
         font-size: 15px;
     }
     .item a {
