@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> JM7official </title>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="icon" href="jm7newlogo2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <div class="top" >
+        <img src="memecombined2.png" class="bcimg">
+        <div id="media">
+            <a  href="https://www.instagram.com/jm7.meme.uninternational" ><img class="mediaimg" src="instagramlogo.png" /></a>
+            <a  href="https://www.youtube.com/channel/UC-ynTp7svpwRGxMb6bZmdKw"><img class="mediaimg" src="youtubelogo.png"/> </a>
+            <a  href="https://discord.com/invite/DXkfpNQnN2"><img class="mediaimg" src="discordlogo.png" /></a>
+        </div> 
+        <img src="jm7newlogoxback.png" class="jm7logo">
+        <div id='menu' class="menu">
+            <a class="closebtn" href='javascript:void(0)'onclick='closemenu()' >x</a>
+            <div id="menua">
+                <center class="menuword"> <u>Menu</u></center>
+                <center > <a href='shop/shop.html'> SHOP </a></center>
+                <center > <a href='donation/donation.html'> DONATE </a></center>
+                <center > <a href='followme.html'> FOLLOW </a></center>
+                <center > <a href=''> CONTACT </a></center>
+            </div>
+        </div>
+        <div class="bottommenu" id="menu2">
+            <div id="menua">
+                <center > <a class="account" href=''> LOG IN </a></center>
+                <center > <a class="account" href=''> SIGN UP </a></center>
+            </div>
+        </div>
+        <span id='menubutton' class="menubutton" onclick="menu(this)">
+            <div class="menu1"></div>
+            <div class="menu2"></div>
+            <div class="menu3"></div>
+        </span>
+        <p class="word" id="word">JM7 ENTERTAINMENT.INC</p>   
+               
+    </div>
+    <div class="aboutme" id="aboutme">
+         <center class="aboutmeword">About me</center>
+         <img class="aboutmeimg" src="aboutme.png">
+         <p class="aboutmetxt">JM7 was found in 2020, created by owner JM7(pic.1), known as the 'best' memer in the world. He borned in Hong Kong and currently live in the UK. As a 'professional international 
+             guy', his english is still a shit. By his 1 year management, his account has more than 4000 follows. It's less follower than most meme account created in 2021(what a shame). 
+             Currently, he is still single    </p>
+
+         <p class="noticetxt">Photo taken in May.2021</p>
+    </div>
+    <script>
+        let oldvalue = 0;
+        let newvalue = 0;
+        window.onscroll=function() {scrolldown()};
+        function scrolldown() {
+            newvalue = window.pageYOffset;
+            if (newvalue > oldvalue){
+                window.location.href = '#aboutme';      
+          } else if (newvalue < oldvalue){
+                window.location.href = '#top' ;
+    }
+
+    oldvalue = newvalue;
+}
+    </script>
+</body>
+</html>
