@@ -161,7 +161,6 @@ body {
     height:auto;
     transition-duration: 0.5s;
     margin-bottom: 2vh;
-    z-index：2；
 }
 .account {
     cursor:pointer;
@@ -252,7 +251,7 @@ body {
 }
 .item {
     width:100vw;
-    height:25vh;
+    height:28vh;
     border-bottom:2px ridge rgb(64, 64, 64);
     border-top:0;
 }
@@ -285,7 +284,6 @@ body {
 .sold{
     overflow-x: 0;
     position:relative;
-    bottom:0;
     font-size: 18px;
     color:rgb(100, 100, 100);
     margin: 5% 0 0 18%;
@@ -325,7 +323,15 @@ body {
     height:50%;
     border:2px solid aliceblue;
 }
-
+.savepoor {
+    position:absolute;
+    float:left;
+    width:20%;
+    height:auto;
+    font-size: 15px;
+    color:aliceblue;
+    margin:26% 0 0 23% ;
+}
 .money {
     position:absolute;
     float:left;
@@ -345,7 +351,16 @@ body {
     height:50%;
     border:2px solid aliceblue;
 }
-
+.savehorny{
+    position:absolute;
+    right:0;
+    text-align: justify;
+    width:20%;
+    height:auto;
+    font-size: 15px;
+    color:aliceblue;
+    margin:26% 14% 0 0 ;
+}
 .horny {
     position:absolute;
     right:0;
@@ -393,7 +408,7 @@ body {
     .menubutton {
         margin-top:2vh;
     }
-    .menuword, .menu a, .account {
+    .menuword, .menu a {
         margin-right:10vw;
         margin-left:10vw;
     }
@@ -426,11 +441,12 @@ body {
         margin:4vh 0 0 5vw;
     }
     .item {
-        height:23vh;
+        position:static;
+        height:20vh;    
     }
     .item img {
         width:40vw;
-        height:23vh;
+        height:20vh;
         overflow: visible;
     }
     .itemname {
@@ -438,16 +454,16 @@ body {
         margin-left:42%;
     }
     .itemprice {
-        position:absolute;
+        position:relative;
         margin:0 0 0 2%;
     }
     .sold {
         position:absolute;
-        margin: 6% 0 0 42% ;
+        margin-left:42%;
         font-size: 15px;
     }
     .item a {
-        margin: -5% 2% 0 0 ;
+        
     }
     .wtfword {
         font-size:12px;
@@ -460,14 +476,6 @@ body {
         width:90%;
         height:35%;
     }
-    .savepoor {
-        float:none;
-        position:absolute;
-        font-size: 15px;
-        width:90%;
-        margin:80% 0 0 30% ;
-
-    }
     .money {
         position:relative;  
         font-size:20px;
@@ -479,13 +487,7 @@ body {
         width:90%;
         height:35%;
     }
-    .savehorny {
-        font-size: 15px; 
-        float:none;
-        position:absolute;
-        width:90%;
-        margin:0 -22% 0 0 ;
-    }
+
     .horny {
         position:absolute;
         font-size: 100%;;
