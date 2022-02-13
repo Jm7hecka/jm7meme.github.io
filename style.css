@@ -323,15 +323,7 @@ body {
     height:50%;
     border:2px solid aliceblue;
 }
-.savepoor {
-    position:absolute;
-    float:left;
-    width:20%;
-    height:auto;
-    font-size: 15px;
-    color:aliceblue;
-    margin:26% 0 0 23% ;
-}
+
 .money {
     position:absolute;
     float:left;
@@ -351,16 +343,7 @@ body {
     height:50%;
     border:2px solid aliceblue;
 }
-.savehorny{
-    position:absolute;
-    right:0;
-    text-align: justify;
-    width:20%;
-    height:auto;
-    font-size: 15px;
-    color:aliceblue;
-    margin:26% 14% 0 0 ;
-}
+
 .horny {
     position:absolute;
     right:0;
