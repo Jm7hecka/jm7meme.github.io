@@ -1,4 +1,4 @@
-﻿html {
+html {
     scroll-behavior: smooth;
     height:100%;
     width:100%;
@@ -325,18 +325,22 @@ body {
     border:2px solid aliceblue;
 }
 .savepoor {
+    position:absolute;
+    float:left;
     width:20%;
     height:auto;
     font-size: 15px;
     color:aliceblue;
-    margin:2% 0 2% 23% ;
+    margin:26% 0 0 23% ;
 }
 .money {
+    position:absolute;
+    float:left;
     width:20%;
     height:auto;
     font-size: 25px;
     color:aliceblue;
-    margin:10% 0 0 25% ;
+    margin:28% 0 0 -19% ;
 }
 
 .hornyimg{
@@ -349,21 +353,24 @@ body {
     border:2px solid aliceblue;
 }
 .savehorny{
-    float:right;
+    position:absolute;
+    right:0;
     text-align: justify;
     width:20%;
     height:auto;
     font-size: 15px;
     color:aliceblue;
-    margin:-3.1% 13% -2% 0 ;
+    margin:26% 14% 0 0 ;
 }
 .horny {
-    float:right;
+    position:absolute;
+    right:0;
     width:40%;
     height:auto;
     font-size: 25px;
     color:aliceblue;
-    margin:0% 4% 0 0 ;
+    margin:28% 4% 0 4% ;
+
 }
 .notavailable {
     margin-top:30vh;
@@ -371,5 +378,132 @@ body {
     font-size: 50px;
 }
 @media only screen and (max-width:800px){
+    #media {
+        display:none;
+    }
 
-}   
+    .jm7logo {
+        margin-left:26vw;
+        width:50%;
+        height:auto;
+    }
+    @keyframes logoposition{
+        from {margin-top:25vh;
+              width:50%;
+              height:auto;
+              margin-left:26vw}
+        to {margin-top:0px;
+            width:25%;
+            height:auto;
+            margin-left:36.5vw;}
+    }
+    .word {
+        width:100%;
+        margin-left:7vw;
+        margin-top:25vh;
+        font-size: 25px;
+    }
+    .menu{
+        border-radius:0;
+    }
+    .menubutton {
+        margin-top:2vh;
+    }
+    .menuword, .menu a {
+        margin-right:10vw;
+        margin-left:10vw;
+    }
+    .aboutmeword {
+        margin-top:1vh;
+        font-size:30px;
+    }
+    .aboutmeimg {
+        width:90%;
+        height:auto;
+        margin-left:4vw;
+    }
+    .aboutmetxt {
+        font-size: 15px;
+        width:90%;
+        margin-top:4vh;
+    }
+    .noticetxt {
+        display: none;
+    }
+
+    .jm7logohold {
+        margin-top:0px;
+        width:25%;
+        height:auto;
+        margin-left: 18vw;
+    }
+    .pagename {
+        font-size: 20px;
+        margin:4vh 0 0 5vw;
+    }
+    .item {
+        height:20vh;
+    }
+    .item img {
+        width:40vw;
+        height:20vh;
+        overflow: visible;
+    }
+    .itemname {
+        width:50vw;
+        margin-left:42%;
+    }
+    .itemprice {
+        margin:0 0 0 2%;
+    }
+    .sold {
+        margin: 12% 0 0 42% ;
+        font-size: 15px;
+    }
+    .item a {
+        margin: -5% 2% 0 0 ;
+    }
+    .wtfword {
+        font-size:12px;
+    }
+    .paraword {
+        font-size:20px;
+    }
+    .moneyimg {
+        margin: 2% 0 0 4%;
+        width:90%;
+        height:35%;
+    }
+    .savepoor {
+        float:none;
+        position:absolute;
+        font-size: 15px;
+        width:90%;
+        margin:80% 0 0 30% ;
+
+    }
+    .money {
+        position:relative;  
+        font-size:20px;
+        margin:7% 0 7% 40% ;
+    }
+    .hornyimg {
+        float:none;
+        margin: 20% 0 0 4%;
+        width:90%;
+        height:35%;
+    }
+    .savehorny {
+        font-size: 15px;
+        float:none;
+        position:absolute;
+        width:90%;
+        margin:0 -22% 0 0 ;
+    }
+    .horny {
+        position:absolute;
+        font-size: 100%;;
+        width:90%;
+        margin:7% 3% 100% 0;
+    }
+}
