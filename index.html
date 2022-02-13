@@ -21,10 +21,10 @@
             <a class="closebtn" href='javascript:void(0)'onclick='closemenu()' >x</a>
             <div id="menua">
                 <center class="menuword"> <u>Menu</u></center>
-                <center > <a href='shop/'> SHOP </a></center>
-                <center > <a href='donation/'> DONATE </a></center>
+                <center > <a href='shop/shop.html'> SHOP </a></center>
+                <center > <a href='donation/donation.html'> DONATE </a></center>
                 <center > <a href='followme.html'> FOLLOW </a></center>
-                <center > <a href=''> CONTACT </a></center>
+                <center > <a href='mailto:jm7memeofficial@gmail.com'> CONTACT </a></center>
             </div>
         </div>
         <div class="bottommenu" id="menu2">
@@ -44,26 +44,31 @@
     <div class="aboutme" id="aboutme">
          <center class="aboutmeword">About me</center>
          <img class="aboutmeimg" src="aboutme.png">
-         <p class="aboutmetxt">JM7 was found in 2020, created by owner JM7(pic.1), known as the 'best' memer in the world. He borned in Hong Kong and currently live in the UK. As a 'professional international 
+         <p class="aboutmetxt">JM7 was found in 2020, created by owner JM7(pic.1), known as the 'best' memer in the world. He borned in Hong Kong and currently living in the UK. As a 'professional international 
              guy', his english is still a shit. By his 1 year management, his account has more than 4000 follows. It's less follower than most meme account created in 2021(what a shame). 
-             Currently, he is still single    </p>
+             Apparently, he is still a freaking single dog    </p>
 
          <p class="noticetxt">Photo taken in May.2021</p>
     </div>
     <script>
         let oldvalue = 0;
         let newvalue = 0;
-        window.onscroll=function() {scrolldown()};
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        }else{
+             window.onscroll=function() {scrolldown()};
+        }
+
         function scrolldown() {
             newvalue = window.pageYOffset;
-            if (newvalue > oldvalue){
-                window.location.href = '#aboutme';      
-          } else if (newvalue < oldvalue){
-                window.location.href = '#top' ;
-    }
+            testvalue = newvalue - oldvalue;
+            if (testvalue > 0.5){
+                window.scrollTo(0, document.body.scrollHeight);     
+          } else if (testvalue < 0){
+                window.scrollTo(0, 0);
+          }
+          oldvalue = newvalue;
+        }
 
-    oldvalue = newvalue;
-}
     </script>
 </body>
 </html>
