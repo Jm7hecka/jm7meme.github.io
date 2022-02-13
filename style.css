@@ -1,0 +1,375 @@
+﻿html {
+    scroll-behavior: smooth;
+    height:100%;
+    width:100%;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(37, 37, 37);
+    width:100%;
+    height:100%;
+}
+.container{
+    position:relative;
+}
+#media {
+    position:fixed;
+    opacity:0;
+    margin-top: 27vh;
+    width:80px;
+    height:350px;
+    background-color: rgb(66, 66, 71);
+    border:1px solid ;
+    border-left: 0;
+    border-radius:0 20px 20px 0;
+    color:rgb(66, 66, 71) ;
+    animation-name:barappear;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes barappear {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+.mediaimg {
+    margin-top: 55%;
+    margin-left: 10%;
+    width:60px;
+    height:auto;
+}
+
+.top {
+    background-color:rgb(0, 0, 0);
+    width: 100%;
+    height:100vh;
+
+}
+
+.bcimg {
+    position:absolute;
+    width:100%;
+    height:100vh;
+    animation-name:changeop;
+    animation-duration:2s;  
+    animation-fill-mode: forwards;
+}
+@keyframes changeop {
+    from {opacity:1;}
+    to {opacity:0.3 ;}
+}
+.jm7logo {
+    position:relative ;
+    margin-top:25vh;
+    width:400px;
+    height:auto;
+    margin-left:36vw;
+    animation-name: logoposition;
+    animation-duration:1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards; 
+}
+@keyframes logoposition{
+    from {margin-top:25vh;
+          width:400px;
+          height:auto;
+          margin-left:36vw}
+    to {margin-top:0px;
+        width:100px;
+        height:auto;
+        margin-left:46.5vw;}
+}
+.jm7logohold {
+    position:relative ;
+    height:auto;
+    margin-top:0px;
+    width:100px;
+    height:auto;
+    margin-left:30.5vw;
+}
+.menubutton {
+    margin-top:4vh;
+    margin-right:2%;
+    margin-left:2%;
+    position:absolute;
+    right:0;
+    display:inline-block;
+    cursor: pointer;
+    opacity:1;
+    transition-duration: 0.5s;
+}
+.menu1, .menu2, .menu3 {
+    width: 35px;
+    height: 5px;
+    background-color: aliceblue;
+    margin: 6px 0;
+    border-radius: 5px;
+    transition: 0.4s;
+
+}
+
+.menu {
+    float:right;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    position:fixed;
+    opacity:1;
+    height:100vh;
+    width:0;
+    top: 0;
+    right:0;
+    overflow-x: 0;
+    border-radius:20px 0 0 20px ;
+    transition-duration: 0.5s;
+}
+.closebtn {
+    position:relative;
+    width:10%;
+    height:auto;
+    font-size: 15px;
+    margin-left: 7%;
+    margin-top:5%;
+}
+.menuword {
+    opacity:1;
+    margin-top:0;
+    font-size:30px;
+    color:rgb(110, 110, 110);
+    margin-bottom:20%;
+}
+.menu a {
+    cursor:pointer;
+    color:rgb(110, 110, 110);
+    font-size: 25px;
+    text-decoration: none;
+    display:block;
+    padding-bottom:20px;
+    transition-duration: 0.3s;
+}
+.menu a:hover{
+    color:aliceblue;
+}
+.bottommenu {
+    float:right;
+    position:fixed;
+    bottom:0;
+    right:0;
+    width:0%;
+    height:auto;
+    transition-duration: 0.5s;
+    margin-bottom: 2vh;
+}
+.account {
+    cursor:pointer;
+    color:rgb(110, 110, 110);
+    font-size: 20px;
+    text-decoration: none;
+    display:block;
+    padding-bottom:20px;
+    transition-duration: 0.3s;
+}
+.account:hover{
+    color:aliceblue;
+}
+
+.word{
+    position:relative;
+    color:aliceblue;
+    width:50%;
+    height:auto;
+    margin-top:10%;
+    margin-left:27%;
+    font-size: 50px;
+    animation-name: wordappear;
+    animation-delay: 1.5s;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    opacity:0;
+    text-shadow:2px -2px 0 #000,
+                -2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000;
+}
+@keyframes wordappear {
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.aboutme {
+    width:100%;
+    height:100vh;
+}
+.aboutmeimg {
+    position:static;
+    float:left;
+    width:30%;
+    height:auto;
+    margin-top: 5vh;
+    margin-left: 2%;
+    border:3px solid aliceblue;
+    border-radius: 10px;
+}
+.aboutmetxt {
+    float:right;
+    margin-top: 10vh ;
+    margin-right: 5% ;
+    width:60%;
+    height:10vh;
+    color: aliceblue;
+    font-size: 20px;
+
+}
+.noticetxt {
+    float:right;
+    color:aliceblue;
+    margin-top: 20vh;
+    margin-right: 52% ;
+}
+.aboutmeword {
+    font-size:50px;
+    color:aliceblue;
+    text-shadow:1px -1px 0 #000,
+                -1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+}
+
+.commontop {
+    border-bottom: 2px ridge rgb(64, 64, 64);
+}
+.pagename {
+    position:relative;
+    float:left;
+    color:aliceblue;
+    font-size: 40px;
+    width:15%;
+    height:auto;
+    margin: 1.5% 0 0 1.5% ;
+}
+.item {
+    width:100vw;
+    height:200px;
+    border-bottom:2px ridge rgb(64, 64, 64);
+    border-top:0;
+}
+.item img {
+    float:left;
+    margin-left: 0.5vw;
+    height:100%;
+    width:250px;
+    object-fit: cover;
+}
+.itemname {
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float:none;
+    color:aliceblue;
+    width:25%;
+    height:auto;
+    margin:0 0 0 18%;
+    font-size: 20px;
+}
+.itemprice{
+    overflow-x: 0;
+    position:relative;
+    font-size: 20px;
+    color:aliceblue;
+    margin-top: 1%;
+    margin-left:1%;
+}
+.sold{
+    overflow-x: 0;
+    position:relative;
+    bottom:0;
+    font-size: 18px;
+    color:rgb(100, 100, 100);
+    margin: 5% 0 0 18%;
+}
+.item a{
+    cursor:pointer;
+    position:sticky;
+    float:right;
+    text-decoration: none;
+    color:rgb(50, 197, 255);
+    display:block;
+    width:auto;
+    height:auto;
+    margin: -1% 2% 0 0 ;
+}
+.item a:hover{
+    color:aliceblue;
+}
+.maindonation {
+    height: 100vh;
+}
+.wtfword{
+    font-size: 15px;
+    color:aliceblue;
+}
+.paraword {
+    font-size:30px;
+    color:aliceblue;
+
+}
+.moneyimg{
+    float:left;
+    display:block;
+    overflow: hidden;
+    margin:2% 0 1% 14% ;
+    width:30%;
+    height:50%;
+    border:2px solid aliceblue;
+}
+.savepoor {
+    width:20%;
+    height:auto;
+    font-size: 15px;
+    color:aliceblue;
+    margin:2% 0 2% 23% ;
+}
+.money {
+    width:20%;
+    height:auto;
+    font-size: 25px;
+    color:aliceblue;
+    margin:10% 0 0 25% ;
+}
+
+.hornyimg{
+    float:right;
+    display:block;
+    overflow: hidden;
+    margin:2% 14% 0 0 ;
+    width:30%;
+    height:50%;
+    border:2px solid aliceblue;
+}
+.savehorny{
+    float:right;
+    text-align: justify;
+    width:20%;
+    height:auto;
+    font-size: 15px;
+    color:aliceblue;
+    margin:-3.1% 13% -2% 0 ;
+}
+.horny {
+    float:right;
+    width:40%;
+    height:auto;
+    font-size: 25px;
+    color:aliceblue;
+    margin:0% 4% 0 0 ;
+}
+.notavailable {
+    margin-top:30vh;
+    color:aliceblue;
+    font-size: 50px;
+}
+@media only screen and (max-width:800px){
+
+}   
