@@ -427,25 +427,25 @@ body {
     }
     .item {
         position:static;
-        height:20vh;    
+        height:22vh;    
     }
     .item img {
         width:40vw;
-        height:20vh;
+        height:22vh;
         overflow: visible;
     }
     .itemname {
-        font-size: 3vh;
+        font-size: 15px;
         width:50vw;
         margin-left:42%;
     }
     .itemprice {
-        font-size:3vh;
+        font-size:15px;
         position:relative;
         margin:0 0 0 2%;
     }
     .sold {
-        font-size:3vh;
+        font-size:12px;
         position:absolute;
         margin-left:42%;
         font-size: 15px;
