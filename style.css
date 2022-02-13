@@ -251,7 +251,7 @@ body {
 }
 .item {
     width:100vw;
-    height:200px;
+    height:20vh;
     border-bottom:2px ridge rgb(64, 64, 64);
     border-top:0;
 }
