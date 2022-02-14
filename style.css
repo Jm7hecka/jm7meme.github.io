@@ -575,4 +575,8 @@ input[type='checkbox'] {
     .notavailable {
         font-size: 20px;
     }
+    .loginmain {
+        width:90%;
+        height:80%;
+    }
 }
