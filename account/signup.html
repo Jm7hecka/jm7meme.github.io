@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="icon" href="../jm7newlogo2.png" />
+    <title>Sign Up</title>
+    <script type="text/javascript" src="../app.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+ <div class="commontop">
+    <img src="../jm7newlogoxback.png" class="jm7logohold">
+    <div class="pagename">
+        <strong>Sign Up</strong>
+    </div>
+    <div id='menu' class="menu">
+        <a class="closebtn" href='javascript:void(0)'onclick='closemenu()' >x</a>
+        <center class="menuword"> <u>Menu</u></center>
+        <center > <a href='../index.html'> HOME </a></center>
+        <center > <a href='../donation/donation.html'> DONATE </a></center>
+        <center > <a href='../followme.html'> FOLLOW </a></center>
+        <center > <a href='mailto:jm7memeofficial@gmail.com'> CONTACT </a></center>
+    </div>
+    <span id='menubutton' class="menubutton" onclick="menu(this)">
+        <div class="menu1"></div>
+        <div class="menu2"></div>
+        <div class="menu3"></div>
+    </span>
+</div>
+    <div class="loginmain">
+        <h1 align="center">SIGN UP</h1>
+        <div class="login">
+            <form id="loginform" class="loginform" action="unavailable.html" method="post" >
+                <br>
+                <p>Create a Username</p>
+                <input type="text" id="username" placeholder="Username" required>
+                <p>Create a Password</p>
+                <input type="password" id="password" placeholder="Password" required>
+                <input class="logbutton" type="submit" value="Sign Up">
+                <input  type="checkbox" class="agreepolicy" >
+                <lable class="policy">
+                    I agree to JM7's <a href="" onclick="alert('I know you are not gonna read that so i wrote nothing')">Privacy Policy</a> even I am not gonna read that.
+                </lable>
+            </form>
+            <br>
+            <br>
+            <p class="text">You have account already?</p>
+            <a href="login.html" ><h5 class="signup">Log in</h5></a>
+    </div>
+</body>
+</html>
