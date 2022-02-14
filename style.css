@@ -520,11 +520,11 @@ input[type='checkbox'] {
     }
     .item {
         position:static;
-        height:200px;    
+        height:24vh;    
     }
     .item img {
         width:40vw;
-        height:22vh;
+        height:24vh;
         overflow: visible;
     }
     .itemname {
