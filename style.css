@@ -447,6 +447,7 @@ body {
     }
     .sold {
         font-size: 12px;
+        padding: 4vh 0 0 1vw;
     }
     .wtfword {
         font-size:12px;
