@@ -428,7 +428,7 @@ body {
     }
     .item {
         position:static;
-        height:22vh;    
+        height:200px;    
     }
     .item img {
         width:40vw;
