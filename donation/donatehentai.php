@@ -21,9 +21,9 @@ session_start();
       <div id='menu' class="menu">
           <a class="closebtn" href='javascript:void(0)'onclick='closemenu()' >x</a>
           <center class="menuword"> <u>Menu</u></center>
-          <center > <a href='../index.html'> HOME </a></center>
-          <center > <a href='../shop/shop.html'> SHOP </a></center>
-          <center > <a href='followme.html'> FOLLOW </a></center>
+          <center > <a href='../'> HOME </a></center>
+          <center > <a href='../shop/'> SHOP </a></center>
+          <center > <a href='../followme.html'> FOLLOW </a></center>
           <center > <a href=''> CONTACT </a></center>
       </div>
       <div class="bottommenu" id="menu2">
