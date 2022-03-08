@@ -1,4 +1,4 @@
-html {
+﻿html {
     scroll-behavior: smooth;
     height:100%;
     width:100%;
@@ -30,6 +30,7 @@ body {
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
+
 @keyframes barappear {
     from {opacity:0;}
     to {opacity:1;}
@@ -91,7 +92,7 @@ body {
     margin-left:30vw;
 }
 .menubutton {
-    margin-top:4vh;
+    margin-top:5vh;
     margin-right:2%;
     margin-left:2%;
     position:absolute;
@@ -102,8 +103,8 @@ body {
     transition-duration: 0.5s;
 }
 .menu1, .menu2, .menu3 {
-    width: 35px;
-    height: 5px;
+    width: 40px;
+    height:6px;
     background-color: aliceblue;
     margin: 6px 0;
     border-radius: 5px;
@@ -365,8 +366,8 @@ body {
     align-self: center;
     margin-left: auto;
     margin-right:auto;
-    width:450px;
-    height:550px;
+    width:500px;
+    height:600px;
     margin-top: 3%;
     border:2px solid rgb(100, 100, 100);
     border-radius: 7px;
@@ -393,7 +394,7 @@ body {
     font-size: 14px;
 }
 .login h5:hover {
-    color:rgb(38, 163, 126)
+    color:rgb(60, 184, 255);
 }
 .signup {
     font-style: normal;
@@ -426,31 +427,172 @@ input[type='text'], input[type='password'] {
     width:100%;
     font-size:15px;
     padding:8px;
-    border-radius: 2px;
+    color:aliceblue;
+    border-radius: 3px;
     border:none;
-    background-color: rgb(38, 163, 126);
+    background-color: rgb(39, 124, 173);
     color:rgb(37, 37, 37)
 
 }
 #loginform:valid .logbutton {
-    background-color: rgb(90, 238, 193);
+    background-color: rgb(60, 184, 255);
 }
 input[type='checkbox'] {
-    margin:10px 0 0 0 ;
+    margin:20px 0 0 0 ;
     float:left;
     transform: scale(1.5);
 }
 .policy{
     font-size: 12px;
-    margin-left:10px;
-    margin-bottom:10%;
-    position:static;
+    margin-left:30px;
+    position:relative;
     width:80%;
     color:aliceblue;
 }
 .policy a{
     color: aliceblue;
     text-decoration: underline;
+}
+.donatehentaidiv {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    color:aliceblue;
+}
+.donatehentaiword{ 
+    width:40%;
+    font-size: 40px;
+    margin: 3% auto 3% auto;
+}
+#donatehentai {
+    width:350px;
+    margin:auto;
+}
+.browse {
+    margin: auto;
+    width:350px;
+    height:45px;
+    background-color:rgb(60, 184, 255);
+    border-radius: 10px;
+    border:0;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+#upload {
+    margin: 5% auto auto auto;
+    width:350px;
+    height: 45px;
+    background-color: rgb(60, 184, 255);
+    border:0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+#upload:hover, .browse:hover {
+    color:aliceblue;
+    background-color: rgb(39, 124, 173);
+}
+#filename {
+    margin-top:5%;
+    margin-bottom:0;
+    font-size: 20px;
+    width:350px;
+}
+.status {
+    font-size:20px;
+}
+.checkfile {
+    font-size: 20px;
+    color:aliceblue;
+    text-decoration: none;
+    width:40%;
+}
+.checkfile:hover {
+    color:rgb(60, 184, 255)
+}
+.directhornyfile {
+    font-size: 18px;
+    margin:2% 0 5% 0;
+}
+.directhornyfile a{
+    color:aliceblue;
+    text-decoration: none;
+}
+.directhornyfile a:hover{
+    color:rgb(60, 184, 255)
+}
+.hornyfile, .hornyfilelabel {
+    position:relative;
+    width:100%;
+    height:8vh;
+    border-bottom: 2px ridge rgb(64, 64, 64);
+    color:aliceblue;
+}
+.hornyfile a{
+    color:aliceblue;
+    text-decoration: none;
+
+}
+.hornyfile a:hover {
+    color:rgb(60, 184, 255)
+}
+.fileimage {
+    float:left;
+    width:7vh;
+    height:7vh;
+    margin:0.5vh 0 0 0.5% ;
+    object-fit: cover;
+    position:relative;
+}
+.filename {
+    float:left;
+    margin:1% 0 0 2% ;
+    position:relative;
+    font-size: 17px;
+}
+
+.filetime {
+    float:right;
+    margin:1% 20% 0 0  ;
+    position:relative;
+    font-size: 17px;
+}
+.filesize {
+    float:right;
+    margin-right:-20%
+}
+.namelabel {
+    float:left;
+    margin:1% 0 0 7% ;
+    position:relative;
+    font-size: 17px;
+}
+
+.timelabel {
+    float:right;
+    margin:1% 20% 0 0  ;
+    position:relative;
+    font-size: 17px;
+}
+.sizelabel {
+    float:right;
+    margin-right:-20.5%
+}
+.error {
+    color:aliceblue;
+    font-size:30px;
+}
+.error a {
+    color:aliceblue;
+    text-decoration: underline;
+}
+.error a:hover {
+    color:rgb(60, 184, 255)
 }
 @media only screen and (max-width:800px){
     #media {
@@ -520,11 +662,11 @@ input[type='checkbox'] {
     }
     .item {
         position:static;
-        height:24vh;    
+        height:200px;    
     }
     .item img {
         width:40vw;
-        height:24vh;
+        height:22vh;
         overflow: visible;
     }
     .itemname {
@@ -578,5 +720,112 @@ input[type='checkbox'] {
     .loginmain {
         width:90%;
         height:80%;
+    }
+    .donatehentaiword{ 
+        width:40%;
+        font-size: 30px;
+        margin: 3% auto 3% auto;
+    }
+    #donatehentai {
+        width:100%;
+        margin:0;
+    }
+    .browse {
+        margin: 7% auto;
+        width:100%;
+        height:7vh;
+        background-color:rgb(60, 184, 255);
+        border-radius: 10px;
+        border:0;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: oblique;
+    }
+    
+    #upload {
+        margin: 5% auto auto auto;
+        width:100%;
+        height: 7vh;
+        background-color: rgb(60, 184, 255);
+        border:0;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: oblique;
+    }
+    #filename {
+        margin-top:2%;
+        margin-bottom:0;
+        font-size: 20px;
+        width:100%;
+    }
+    .checkfile {
+        font-size: 18px;
+        color:aliceblue;
+        text-decoration: none;
+        width:100%;
+    }
+    .hornyfile {
+        position:relative;
+        width:100%;
+        height:8vh;
+        border-bottom: 2px ridge rgb(64, 64, 64);
+        color:aliceblue;
+    }
+
+    .fileimage {
+        float:left;
+        width:7vh;
+        height:7vh;
+        margin:0.5vh 0 0 0.5% ;
+        object-fit: cover;
+        position:relative;
+    }
+    .filename {
+        float:left;
+        margin:3.5% 0 0 2% ;
+        position:relative;
+        font-size:13px;
+        width:20%;
+        overflow-x:hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .filetime {
+        float:right;
+        margin:3.5% 20% 0 0  ;
+        position:relative;
+        font-size: 13px;
+    }
+    .filesize {
+        float:right;
+        font-size: 13px;
+        margin-right:-40%
+    }
+    .namelabel {
+        float:left;
+        margin:3% 0 0 7% ;
+        position:relative;
+        font-size: 13px;
+    }
+    
+    .timelabel {
+        float:right;
+        margin:3% 20% 0 0  ;
+        position:relative;
+        font-size: 13px;
+    }
+    .sizelabel {
+        float:right;
+        font-size: 13px;
+        margin-right:-40%
+    }
+   .hornyfilelabel {
+        position:relative;
+        width:100%;
+        height:5vh;
+        border-bottom: 2px ridge rgb(64, 64, 64);
+        color:aliceblue;
     }
 }
