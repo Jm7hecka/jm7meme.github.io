@@ -6,7 +6,9 @@
     "node": "16.14",
     "npm":"8.0"
   }
-  
+  "scripts": {
+  "start": "node index.js"
+}
 
 }
 
