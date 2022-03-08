@@ -24,7 +24,7 @@ session_start();
           <center > <a href='../'> HOME </a></center>
           <center > <a href='../shop/'> SHOP </a></center>
           <center > <a href='../followme.html'> FOLLOW </a></center>
-          <center > <a href=''> CONTACT </a></center>
+          <center > <a href='mailto:jm7memeofficial@gmail.com'> CONTACT </a></center>
       </div>
       <div class="bottommenu" id="menu2">
           <center > <a class="account" href='../account/login.html'> LOG IN </a></center>
