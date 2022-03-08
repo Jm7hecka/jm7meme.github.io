@@ -1,16 +1,1 @@
-{
-    "license": [
-       "LGPL-2.1-only",
-       "GPL-3.0-or-later"
-    ]
-}
-{
-  "name": "NodeDirectUploader",
-  "version": "0.0.1",
 
-  "dependencies": {
-    "aws-sdk": "2.x",
-    "ejs": "2.x",
-    "express": "4.x"
-  }
-}
