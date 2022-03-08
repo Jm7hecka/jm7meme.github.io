@@ -6,10 +6,6 @@
     "node": "16.x"
   }
   
-  "dependencies": {
-    "aws-sdk": "2.x",
-    "ejs": "2.x",
-    "express": "4.x"
-  }
+
 }
 
