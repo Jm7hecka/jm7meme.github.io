@@ -1,1 +1,9 @@
+{
+  "name": "jm7memeofficial",
+  "description": "jm7 official website",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  }
+}
 
