@@ -6,8 +6,9 @@ $dir = "uploadedfile/";
 $file = $_FILES["files"]["name"];
 $files = $dir.basename($file);
 $ok = 1;
-$s3 = new Aws\S3\S3Client([
-    'version'  => '2006-03-01',
+use  Aws\S3\S3Client;
+$s3 = new S3Client([
+    'version'  => 'latest',
     'region'   => 'eu-west-2',
 ]);
 $bucket = getenv('S3_BUCKET')?: $_SESSION['status'] = 'S3 bucket unavailable');header("location: donatehentai.php");
@@ -20,8 +21,8 @@ rename($files, $dir.pathinfo($files)['filename'].strval(rand()).'.'.$filetype);
 
 
 if ($ok == 1) {
-    $s3->upload($bucket, $file , fopen($_FILES['files']['tmp_name'], 'rb'), 'public-read');)
-    if ($s3->upload($bucket, $file , fopen($_FILES['files']['tmp_name'], 'rb'), 'public-read');)) {
+    if (move_uploaded_file($_FILES["files"]["tmp_name"], $files)) {
+        $s3->upload($bucket, $file , fopen($_FILES['files']['tmp_name'], 'rb'), 'public-read');
         $_SESSION['status'] =  "File upload successful";
         $_SESSION['filepath'] = $files;
         header("location: donatehentai.php");
