@@ -10,8 +10,12 @@ use  Aws\S3\S3Client;
 $s3 = new S3Client([
     'version'  => 'latest',
     'region'   => 'eu-west-2',
+    'credentials' => [
+        'key'    => 'AKIAX2XE36UDJH3QVUO3',
+        'secret' => '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'
+    ]
 ]);
-$bucket = getenv('S3_BUCKET')?: $_SESSION['status'] = 'S3 bucket unavailable');header("location: donatehentai.php");
+$bucket = 'uploadedhornyfile';
 $filetype = strtolower(pathinfo($files,PATHINFO_EXTENSION));
 
 rename($file, pathinfo($files)['filename'].strval(rand()).'.'.$filetype);
