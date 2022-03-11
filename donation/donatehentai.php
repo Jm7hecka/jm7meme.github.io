@@ -39,7 +39,7 @@ session_start();
     <div class="donatehentaidiv" >
          <p class='donatehentaiword' align='center'> Donate Hentai</p>
          <form id="donatehentai" action="uploadhentai.php" method="post" enctype="multipart/form-data">
-           <input type="file" name="files" id="browse" value="Select file" style='display:none;'  accept='image/*, video/*, application/pdf' >
+           <input type="file" name="files" id="browse" value="Select file" style='display:none;'  accept='image/*, video/*, application/pdf' required>
            <input type='button' value='Choose file' class='browse' onclick="document.getElementById('browse').click()">
            <center> <p id='filename'></p> </center>
            <input type="submit" id="upload" value="Upload">
@@ -54,14 +54,27 @@ session_start();
          $_SESSION['status'] = '';
          ?>
     </div>
-    <script>
+       <script>
       var input = document.getElementById('browse');
       var info = document.getElementById('filename');
       input.addEventListener('change', showfilename)
+
+      function realsize(byte){
+        const units = ['B','KB','MB','GB','TB','PB','EB','ZB','YB'];
+        var devide = 1024;
+        let i = 0;
+        while ((byte/devide) > 0.9) {
+            byte = byte / devide;
+            i++;
+        }
+        return byte.toPrecision(3)+ ' ' + units[i];
+      }
+
       function showfilename(event){
         var input = event.srcElement;
         var filename = input.files[0].name;
-        info.textContent = filename;
+        var size = input.files[0].size;
+        info.textContent = filename + ' (' + realsize(size) + ')';
       }
     </script>
 </body>
