@@ -1,6 +1,6 @@
 <?php
-require('vendor/autoload.php')?:$_SESSION['status'] = 'S3 bucket unavailable');header("location: donatehentai.php");
 session_start();
+require('vendor/autoload.php')?:$_SESSION['status'] = 'S3 bucket unavailable');header("location: donatehentai.php");
 $_SESSION['status'] = " ";
 $dir = "uploadedfile/";
 $file = $_FILES["files"]["name"];
