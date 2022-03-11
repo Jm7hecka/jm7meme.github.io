@@ -20,6 +20,7 @@ rename($files, $dir.pathinfo($files)['filename'].strval(rand()).'.'.$filetype);
 
 
 if ($ok == 1) {
+    $s3->upload($bucket, $file , fopen($_FILES['files']['tmp_name'], 'rb'), 'public-read');)
     if ($s3->upload($bucket, $file , fopen($_FILES['files']['tmp_name'], 'rb'), 'public-read');)) {
         $_SESSION['status'] =  "File upload successful";
         $_SESSION['filepath'] = $files;
