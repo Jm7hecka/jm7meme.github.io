@@ -1,4 +1,5 @@
 <?php
+require('vendor/autoload.php')?:$_SESSION['status'] = 'S3 bucket unavailable');
 session_start();
 $_SESSION['status'] = " ";
 $dir = "uploadedfile/";
@@ -9,7 +10,7 @@ $s3 = new Aws\S3\S3Client([
     'version'  => '2006-03-01',
     'region'   => 'eu-west-2',
 ]);
-$bucket = getenv('S3_BUCKET')?: die( $_SESSION['status'] = 'S3 bucket unavailable');
+$bucket = getenv('S3_BUCKET')?: $_SESSION['status'] = 'S3 bucket unavailable');
 $filetype = strtolower(pathinfo($files,PATHINFO_EXTENSION));
 if (file_exists($files)) {
     rename($file, pathinfo($files)['filename'].strval(rand()).'.'.$filetype);
