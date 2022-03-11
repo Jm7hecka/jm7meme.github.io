@@ -12,9 +12,9 @@ $s3 = new Aws\S3\S3Client([
 ]);
 $bucket = getenv('S3_BUCKET')?: $_SESSION['status'] = 'S3 bucket unavailable');
 $filetype = strtolower(pathinfo($files,PATHINFO_EXTENSION));
-if (file_exists($files)) {
-    rename($file, pathinfo($files)['filename'].strval(rand()).'.'.$filetype);
-    rename($files, $dir.pathinfo($files)['filename'].strval(rand()).'.'.$filetype);
+
+rename($file, pathinfo($files)['filename'].strval(rand()).'.'.$filetype);
+rename($files, $dir.pathinfo($files)['filename'].strval(rand()).'.'.$filetype);
 
 }
 
