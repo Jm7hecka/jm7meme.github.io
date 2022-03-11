@@ -10,10 +10,6 @@ use  Aws\S3\S3Client;
 $s3 = new S3Client([
     'version'  => 'latest',
     'region'   => 'eu-west-2',
-    'credentials' => [
-        'key'    => 'AKIAX2XE36UDJH3QVUO3',
-        'secret' => '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'
-    ]
 ]);
 $bucket = 'uploadedhornyfile';
 $filetype = strtolower(pathinfo($files,PATHINFO_EXTENSION));
@@ -28,8 +24,12 @@ if ($ok == 1) {
     if (move_uploaded_file($_FILES["files"]["tmp_name"], $files)) {
         try { 
             
-             $s3->upload($bucket, $file , fopen($_FILES['files']['tmp_name'], 'r'), 'public-read');
-        }catch(Exception $e) {
+             $s3Client->putObject([
+                            'Bucket' => $bucket,
+                            'Key'    => $files,
+                            'Body'   => fopen($files, 'r'),
+                            'ACL'    => 'public-read', // make file 'public'
+                        ]);
             $_SESSION['status'] = $files;
             header("location: donatehentai.php");
         }
