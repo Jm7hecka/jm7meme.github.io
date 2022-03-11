@@ -11,8 +11,6 @@ $s3 = new Aws\S3\S3Client([
     'region'   => 'eu-west-2',
 ]);
 $bucket = getenv('S3_BUCKET')?: die( $_SESSION['status'] = 'S3 bucket unavailable');
-
-
 $filetype = strtolower(pathinfo($files,PATHINFO_EXTENSION));
 if (file_exists($files)) {
     rename($file, pathinfo($files)['filename'].strval(rand()).'.'.$filetype);
@@ -20,13 +18,7 @@ if (file_exists($files)) {
 
 }
 
-if($filetype == 'jpg' || $filetype == 'png' ||  $filetype == 'mp4' || $filetype == 'jpeg' || $filetype == 'gif' || $filetype == 'mov' || $filetype == 'avi'){
-    $ok = 1;
-}else {
-    $ok = 0;
-    $_SESSION['status'] =  "File must be video or image :(";
-    header("location: donatehentai.php");
-}
+
 if ($ok == 1) {
     if ($s3->upload($bucket, $file , fopen($_FILES['files']['tmp_name'], 'rb'), 'public-read');)) {
         $_SESSION['status'] =  "File upload successful";
