@@ -1,6 +1,5 @@
 <?php
 session_start();
-require('vendor/autoload.php');
 $_SESSION['status'] = " ";
 $dir = "uploadedfile/";
 $file = $_FILES["files"]["name"];
