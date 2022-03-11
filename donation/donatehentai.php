@@ -40,7 +40,7 @@ session_start();
          <p class='donatehentaiword' align='center'> Donate Hentai</p>
          <form id="donatehentai" action="uploadhentai.php" method="post" enctype="multipart/form-data">
            <input type="file" name="files" id="browse" value="Select file" style='display:none;'  accept='image/*, video/*, application/pdf' required>
-           <input type='button' value='Choosee file' class='browse' onclick="document.getElementById('browse').click()">
+           <input type='button' value='Choose file' class='browse' onclick="document.getElementById('browse').click()">
            <center> <p id='filename'></p> </center>
            <input type="submit" id="upload" value="Upload">
          </form>
